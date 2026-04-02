@@ -751,6 +751,11 @@ section {
     font-size: 0.88rem;
 }
 .heart { color: var(--pink-deep); font-size: 1rem; }
+.hidden-mark {
+    color: transparent;
+    user-select: text;
+    font-size: 12px;
+}
 
 /* ═══════════════════════════════════════════════
    SCROLLBAR
