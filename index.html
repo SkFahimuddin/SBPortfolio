@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjhbati Bandyopadhyay — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-outer" id="cursorOuter"></div>
+    <div class="cursor-inner" id="cursorInner"></div>
+
+    <!-- Floating petals background -->
+    <div class="petals-container" id="petals"></div>
+
+    <!-- ───────── NAV ───────── -->
+    <nav class="nav" id="nav">
+        <div class="nav-logo">
+            <span class="logo-script">S</span><span class="logo-text">anjhbati</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-phone" id="navPhone">
+            <a href="#hero"><i class="fa-solid fa-house"></i></a>
+            <a href="#about"><i class="fa-solid fa-user"></i></a>
+            <a href="#projects"><i class="fa-solid fa-briefcase"></i></a>
+            <a href="#skills"><i class="fa-solid fa-code"></i></a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <!-- ───────── HERO ───────── -->
+    <section class="hero" id="hero">
+        <div class="hero-left">
+            <p class="hero-greeting">✨ Hello, World! I'm</p>
+            <h1 class="hero-name">Sanjhbati<br><span class="name-last">Bandyopadhyay</span></h1>
+            <div class="hero-role">
+                <span class="role-prefix">A </span>
+                <span id="typedRole"></span>
+                <span class="type-cursor">|</span>
+            </div>
+            <p class="hero-tagline">I build practical, real-world projects using modern technologies and continuously work on improving my problem-solving skills.</p>
+            <div class="hero-btns">
+                <a class="btn-primary" href="#projects">View Projects</a>
+                <a class="btn-outline" href="#contact">Say Hello 💌</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-img-wrapper">
+                <div class="hero-img-blob"></div>
+                <div class="hero-img" id="heroImg">
+                    <!-- Replace src with your image -->
+                    <img src="hero.jpeg" alt="Sanjhbati" onerror="this.style.display='none'">
+                    <div class="hero-img-placeholder">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <div class="hero-badge badge-1"><i class="fa-solid fa-code"></i> Full-Stack Dev</div>
+                <div class="hero-badge badge-2"><i class="fa-solid fa-brain"></i> AI Student</div>
+                <div class="hero-badge badge-3"><i class="fa-solid fa-star"></i> Problem Solver</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social sidebar -->
+    <div class="social-sidebar">
+        <a href="https://github.com/SanjhbatiBandyopadhyay" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sanjhbati-bandyopadhyay-71518232b" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:xib48.sanjhbatibandyopadhyay@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <div class="social-line"></div>
+    </div>
+
+    <!-- ───────── ABOUT ───────── -->
+    <section class="about" id="about">
+        <div class="section-label">— About Me —</div>
+        <div class="about-inner">
+            <div class="about-img-col reveal-left">
+                <div class="about-img-frame">
+                    <img src="about.jpeg" alt="About Sanjhbati" onerror="this.style.display='none'">
+                    <div class="about-img-placeholder"><i class="fa-solid fa-user-graduate"></i></div>
+                </div>
+                <div class="about-card-float">
+                    <span>🎓</span> B.Tech CSE (AI)<br><small>3rd Year — TIU</small>
+                </div>
+            </div>
+            <div class="about-text-col reveal-right">
+                <h2 class="section-title">Who Am I?</h2>
+                <p>I'm a <strong>3rd-year B.Tech student</strong> in Computer Science & Engineering (AI) at <strong>Techno India University</strong>. I have a strong interest in <strong>web development</strong> and enjoy building full-stack applications that solve real-world problems.</p>
+                <p>Alongside development, I actively work on improving my problem-solving skills through <strong>Data Structures and Algorithms</strong>. I'm currently focused on gaining practical experience and preparing for opportunities in <strong>product-based companies</strong>.</p>
+                <div class="about-goal">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <span>Goal: Secure a role at a product-based company and contribute to meaningful, impactful projects.</span>
+                </div>
+
+                <!-- Education inside about -->
+                <div class="edu-cards">
+                    <div class="edu-card" data-tilt>
+                        <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+                        <h4>B.Tech CSE (AI)</h4>
+                        <p>Techno India University</p>
+                        <span class="edu-year">2023 – Present</span>
+                    </div>
+                    <div class="edu-card" data-tilt>
+                        <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                        <h4>Senior Secondary</h4>
+                        <p>Aditya Academy Sr. Secondary</p>
+                        <span class="edu-year">Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───────── PROJECTS ───────── -->
+    <section class="projects" id="projects">
+        <div class="section-label">— My Work —</div>
+        <h2 class="section-title centered">Featured Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card reveal-up" data-color="purple">
+                <div class="project-img" id="projImg1">
+                    <img src="repurpose.png" alt="Repurpose Dreams" onerror="this.style.display='none'">
+                    <div class="proj-placeholder"><i class="fa-solid fa-recycle"></i></div>
+                    <div class="project-overlay">
+                        <a href="https://github.com/SanjhbatiBandyopadhyay" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-tag">MERN Stack</div>
+                    <h3>♻️ Repurpose Dreams</h3>
+                    <p>A full-stack marketplace promoting sustainable living through buying and selling recycled products. Built with Node.js, Express, MongoDB, and React.</p>
+                    <div class="project-stack">
+                        <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal-up" data-color="red" style="--delay:0.15s">
+                <div class="project-img" id="projImg2">
+                    <img src="netflix.png" alt="Netflix Analysis" onerror="this.style.display='none'">
+                    <div class="proj-placeholder"><i class="fa-solid fa-chart-bar"></i></div>
+                    <div class="project-overlay">
+                        <a href="https://github.com/SanjhbatiBandyopadhyay" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-tag">Data Analysis</div>
+                    <h3>🎬 Netflix Data Analysis</h3>
+                    <p>Performed data analysis on Netflix dataset to identify content trends — genres, release years, and ratings — using Python data science libraries.</p>
+                    <div class="project-stack">
+                        <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal-up" data-color="blue" style="--delay:0.3s">
+                <div class="project-img" id="projImg3">
+                    <img src="fittech.png" alt="FitTech" onerror="this.style.display='none'">
+                    <div class="proj-placeholder"><i class="fa-solid fa-dumbbell"></i></div>
+                    <div class="project-overlay">
+                        <a href="https://github.com/SanjhbatiBandyopadhyay" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <div class="project-tag">Team Project</div>
+                    <h3>💪 FitTech</h3>
+                    <p>Contributed to a team fitness web app — developed login/signup functionality, form handling & validation, and collaborated via GitHub for version control.</p>
+                    <div class="project-stack">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ───────── SKILLS ───────── -->
+    <section class="skills" id="skills">
+        <div class="section-label">— What I Know —</div>
+        <h2 class="section-title centered">Skills & Technologies</h2>
+        <div class="skills-grid">
+
+            <div class="skill-group reveal-up">
+                <div class="skill-group-icon"><i class="fa-solid fa-terminal"></i></div>
+                <h4>Programming</h4>
+                <div class="skill-tags">
+                    <span>C</span><span>C++</span><span>Python</span><span>JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-group reveal-up" style="--delay:0.1s">
+                <div class="skill-group-icon"><i class="fa-solid fa-globe"></i></div>
+                <h4>Web Development</h4>
+                <div class="skill-tags">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span>
+                </div>
+            </div>
+
+            <div class="skill-group reveal-up" style="--delay:0.2s">
+                <div class="skill-group-icon"><i class="fa-solid fa-database"></i></div>
+                <h4>Database</h4>
+                <div class="skill-tags">
+                    <span>MongoDB</span><span>Mongoose</span>
+                </div>
+            </div>
+
+            <div class="skill-group reveal-up" style="--delay:0.3s">
+                <div class="skill-group-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h4>Tools</h4>
+                <div class="skill-tags">
+                    <span>Git</span><span>GitHub</span><span>Node.js</span><span>Express.js</span>
+                </div>
+            </div>
+
+            <div class="skill-group reveal-up" style="--delay:0.4s">
+                <div class="skill-group-icon"><i class="fa-solid fa-brain"></i></div>
+                <h4>Core Concepts</h4>
+                <div class="skill-tags">
+                    <span>DSA</span><span>Problem Solving</span><span>REST APIs</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Achievements -->
+        <div class="achievements">
+            <h3 class="achievements-title">🏆 Achievements</h3>
+            <div class="achievements-list">
+                <div class="achievement-item reveal-left">
+                    <div class="ach-dot"></div>
+                    <p>Delivered a presentation under the <strong>Future of Work Career Program (FWCP)</strong> conducted by Ambuja Neotia Group</p>
+                </div>
+                <div class="achievement-item reveal-left" style="--delay:0.1s">
+                    <div class="ach-dot"></div>
+                    <p>Pitched a startup idea at <strong>Idea Ignition 1.0</strong></p>
+                </div>
+                <div class="achievement-item reveal-left" style="--delay:0.2s">
+                    <div class="ach-dot"></div>
+                    <p>Actively participated in technical and collaborative projects, gaining experience in <strong>teamwork and communication</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───────── CONTACT ───────── -->
+    <section class="contact" id="contact">
+        <div class="section-label">— Let's Talk —</div>
+        <h2 class="section-title centered">Get In Touch 💌</h2>
+        <div class="contact-inner">
+            <div class="contact-info reveal-left">
+                <p class="contact-intro">I'm always open to new opportunities, collaborations, or just a friendly chat about tech. Feel free to reach out!</p>
+                <div class="contact-links">
+                    <a href="mailto:xib48.sanjhbatibandyopadhyay@gmail.com" class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">xib48.sanjhbatibandyopadhyay@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/SanjhbatiBandyopadhyay" target="_blank" class="contact-item">
+                        <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                        <div>
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">SanjhbatiBandyopadhyay</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sanjhbati-bandyopadhyay-71518232b" target="_blank" class="contact-item">
+                        <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div>
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">sanjhbati-bandyopadhyay</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form-wrap reveal-right">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name <span class="req">*</span></label>
+                            <input type="text" id="firstName" placeholder="First name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name <span class="req">*</span></label>
+                            <input type="text" id="lastName" placeholder="Last name" required>
+                        </div>
+                    </div>
+                    <div class="form-group full">
+                        <label>Email <span class="req">*</span></label>
+                        <input type="email" id="emailInput" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group full">
+                        <label>Message <span class="req">*</span></label>
+                        <textarea id="msgInput" placeholder="What's on your mind?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    <div id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with <span class="heart">♥</span> by Sanjhbati Bandyopadhyay &nbsp;·&nbsp; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
